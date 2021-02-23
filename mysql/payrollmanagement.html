@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../header/header.css">
+<link rel="stylesheet" href="mysql.css">
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="../home.html" class="active">Home</a>
+  <a href="../mysql/mysql.html">Mysql Dumps</a>
+  <a href="../oracle/Oracle.html">Oracle Mcq's Practise</a>
+  <a href="../java/java.html">Java Dumps</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<br><br>
+<script src="../header/header.js"></script>
+
+<div class="dropdown">
+    <a href="mysql.html"> <button class="dropbtn">Mysql Dumps</button></a> -----> 
+    <div class="dropdown-content">
+      <a href="mysqlmcq.html" style="border-bottom: 1px solid gray;">Mcq's</a>
+      <a href="queries.html" style="border-bottom: 1px solid gray;">Schema's & Queries</a>
+      <a href="#" style="border-bottom: 1px solid gray;"><strike>Theory</strike></a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <a href="mysql.html"> <button class="dropbtn"style="color:white;padding:5px;background-color: hotpink;">Schema's & Queries</button></a> ---> 
+    <div class="dropdown-content">
+      <a href="657aj-d97u2.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">1) Student Management System</a>
+      <a href="students_marks.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">2) Student Marks </a>
+      <a href="mobilemanagement.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">3) Mobile Management System </a>
+      <a href="airlinemanagement.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">4) Air line Management System </a>
+      <a href="video management.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">5) Video Management System </a>
+      <a href="BANKMANAGEMENT.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">6) Bank Management System</a>
+      <a href="payrollmanagement.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">7) Pay Roll Management  </a>
+      <a href="practise.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">8) Practise</a>
+      <a href=" " style="border-bottom: 1px solid gray;background-color: black;color: white;"> </a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <a href="mysql.html"> <button class="dropbtn"style="color:white;padding:5px;background-color: orange;">NEW Schema's & Queries</button></a> 
+    <div class="dropdown-content">
+      <a href="studentmanagementnew.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">1) <span style="color: red;"> *</span>NEW Student Management System</a>
+      <a href="bankmanageentnew.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">2) <span style="color: red;"> *</span>NEW Bank Management System </a>
+      <a href="mobilemanagementnew.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">3)<span style="color: red;"> *</span>NEW Mobile Management System </a>
+      <!--<a href="ba" style="border-bottom: 1px solid gray;background-color: black;color: white;">4) <span style="color: red;">*</span> NEW Bank Management System </a>
+      <a href="#" style="border-bottom: 1px solid gray;background-color: black;color: white;">5) Video Management System </a>
+      <a href="BANKMANAGEMENT.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">6) Bank Management System</a>
+      <a href="payrollmanagement.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">7) Pay Roll Management  </a>
+      <a href="practise.html" style="border-bottom: 1px solid gray;background-color: black;color: white;">8) Practise</a>
+      <a href=" " style="border-bottom: 1px solid gray;background-color: black;color: white;"> </a>-->
+    </div>
+  </div>
+  <br><br><br>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0067)http://s3.pdfconvertonline.com/convert/p3r68-cdx67/ibbx9-cmskp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.4.7.2 (Linux)">
+	<meta name="author" content="Janet, Remy (Cognizant)">
+	<meta name="created" content="2017-09-22T08:52:00">
+	<meta name="changedby" content="sukeshreddy alugubelli">
+	<meta name="changed" content="2018-04-18T19:52:00">
+	<meta name="AppVersion" content="16.0000">
+	<meta name="Company" content="Cognizant Technology Solutions">
+	<meta name="DocSecurity" content="0">
+	<meta name="HyperlinksChanged" content="false">
+	<meta name="LinksUpToDate" content="false">
+	<meta name="ScaleCrop" content="false">
+	<meta name="ShareDoc" content="false">
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 1in }
+		p { margin-bottom: 0.1in; direction: ltr; line-height: 120%; text-align: left; orphans: 2; widows: 2 }
+	</style>
+</head>
+<body lang="en-US" dir="ltr">
+<p align="center" style="margin-bottom: 0.11in; line-height: 108%"><font size="4" style="font-size: 14pt"><u>PayRoll
+Mangement System</u></font></p>
+<p style="margin-bottom: 0.11in; line-height: 108%">select
+e.empid,e.empname,d.depid,d.depname</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">from
+employee_info e 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">join dep_info d</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">on
+e.depid=d.depid</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">where
+d.location='Chennai';<img src="./payrollmanagement_files/ibbx9-cmskp_html_eeb614f6341e00d8.png" name="Picture 1" align="bottom" width="624" height="384" border="0">
+</p>
+<p style="margin-left: 2in; text-indent: 0.5in; margin-bottom: 0.11in; line-height: 108%">
+<u>DDL COMMANDS</u></p>
+<p style="margin-bottom: 0.11in; line-height: 108%">-LEAVE_INFO</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">CREATE TABLE
+LEAVE_INFO (LEAVE_CATEGORY VARCHAR 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">(1) PRIMARY KEY ,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> CL INTEGER, EL
+INTEGER, ML INTEGER</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> );</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--SALARY_INFO</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">CREATE TABLE
+SALARY_INFO(EMPLOYEE_CATEGORY VARCHAR(1) PRIMARY KEY, 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">BASIC
+DECIMAL(7,2),TRAVELLING_ALLOWANCE DECIMAL(6,2),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">DEARNESS_ALLOWANCE
+DECIMAL(6,2),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">HOUSE_RENT
+DECIMAL(6,2),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">LOCATION_ALLOWANCE
+DECIMAL(6,2),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">PROVIDENT_FUND
+DECIMAL(6,2),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">MEDICAL_ALLOWANCE
+DECIMAL(6,2),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">PROFTAX
+DECIMAL(6,2),INSURANCE DECIMAL(6,2)</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--DEPARTMENT</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">CREATE TABLE
+DEPT_INFO (DEPTID VARCHAR (10) PRIMARY KEY, 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">DEPTNAME VARCHAR
+(20), LOCATION VARCHAR (20));</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--EMPLOYEE_INFO</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">CREATE TABLE
+EMPLOYEE_INFO (EMPID VARCHAR(10) PRIMARY KEY,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> EMPNAME
+VARCHAR(20), DEPTID VARCHAR(10),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> JOINING_DT DATE,
+DOB DATE,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> YRS_OF_EXP
+INTEGER,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">EMPLOYEE_CATEGORY
+VARCHAR(1),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> LEAVE_CATEGORY
+VARCHAR(1), 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">FOREIGN
+KEY(DEPTID) REFERENCES DEPT_INFO(DEPTID),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">FOREIGN
+KEY(EMPLOYEE_CATEGORY) REFERENCES SALARY_INFO(EMPLOYEE_CATEGORY), 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">FOREIGN
+KEY(LEAVE_CATEGORY) REFERENCES LEAVE_INFO(LEAVE_CATEGORY));</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--EMP_LEAVE_INFO</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">CREATE TABLE
+EMP_LEAVE_INFO (EMPID VARCHAR (10), 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">FROM_DATE DATE,
+TO_DATE DATE, TOTAL_LEAVES INTEGER,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> LEAVE_TYPE
+VARCHAR (5),</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> CONSTRAINT
+LEAVE_INFO FOREIGN KEY (EMPID) 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">REFERENCES
+EMPLOYEE_INFO</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">(EMPID));</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--EMP_PAYROLL</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">CREATE TABLE
+EMP_PAYROLL (TRANSNO INTEGER PRIMARY KEY,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> EMPID VARCHAR
+(10), MONTH VARCHAR (10), 
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">YEAR INTEGER (4),
+TOTALEARNING INTEGER,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">TOTALDEDUCTION
+INTEGER, LOPAMOUNT INTEGER,</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"> NETPAY INTEGER
+);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p style="margin-left: 2.5in; text-indent: 0.5in; margin-bottom: 0.11in; line-height: 108%">
+<u>DML COMMAND</u></p>
+<p style="margin-bottom: 0.11in; line-height: 108%">-- DATA FOR
+SALARY_INFO TABLE</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+SALARY_INFO VALUES ('A',6000,1400,1200,1750,900,750,1450,260,1000);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+SALARY_INFO VALUES ('B',5500,1100,900,1450,700,650,1250,230,900);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+SALARY_INFO VALUES ('C',5000,1000,800,1350,650,500,1050,190,700);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+SALARY_INFO VALUES ('D',4000,900,750,1150,450,400,750,120,600);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--DATA FROM
+LEAVE_INFO TABLE</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+LEAVE_INFO VALUES ('X',18,5,10);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+LEAVE_INFO VALUES ('Y',15,3,8);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+LEAVE_INFO VALUES ('Z',12,3,7);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--DATA FOR DEPT
+TABLE</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+DEPT_INFO VALUES ('D001','IT','BANGALORE');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+DEPT_INFO VALUES ('D002','SALES','CHENNAI');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+DEPT_INFO VALUES ('D003','HR','COCHIN');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+DEPT_INFO VALUES ('D004','TRANSPORT','DELHI');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--DATA FOR
+EMPLOYEE_INFO TABLE</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E001','RAM','D001','2001-03-01','79-07-12',11,'A','X');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E002','DEV','D001','2011-05-23','87-03-11',1,'D','Z');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E003','SAM','D001','2011-04-13','84-11-14',1,'D','Z');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E004','STEVE',NULL,NULL,'83-01-25',NULL,NULL,NULL);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E005','OLGA','D002','2007-10-02','79-05-12',5,'B','Y');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E006','SANGEETHA','D003','2005-07-10','82-09-12',7,'B','Y');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E007','PRAKASH','D003','2009-06-15','87-08-12',3,'D','Z');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES ('E008','SANA',NULL,NULL,NULL,NULL,NULL,NULL);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E009','MANO','D002','2008-11-01','88-05-12',4,'C','Y');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMPLOYEE_INFO VALUES
+('E010','DINU','D001','2006-03-08','82-03-23',6,'B','Y');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--DATA FOR
+EMP_LEAVE_INFO</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_LEAVE_INFO VALUES ('E001','2012-04-04','2012-04-12',6,'CL');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_LEAVE_INFO VALUES ('E002','2012-03-02','2012-05-02',1,'CL');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_LEAVE_INFO VALUES ('E003','2012-04-04','2012-05-05',31,'ML');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_LEAVE_INFO VALUES ('E004','2012-02-14','2012-05-10',1,'OH');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_LEAVE_INFO VALUES ('E005','2012-01-14','2012-01-06',3,'EL');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_LEAVE_INFO VALUES ('E001','2012-04-14','2012-04-16',2,'CL');</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">--DATA FOR
+EMP_PAYROLL</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_PAYROLL VALUES (1,'E001','APR',2012,12700,2010,0,10690);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_PAYROLL VALUES (2,'E002','MAR',2012,8000,1120,0,6880);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_PAYROLL VALUES (3,'E003','APR',2012,8000,1120,3360,4640);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_PAYROLL VALUES (4,'E005','JAN',2012,10700,1780,0,8920);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%">INSERT INTO
+EMP_PAYROLL VALUES (5,'E006','JAN',2012,10700,1780,500,8420);</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p align="center" style="margin-bottom: 0.11in; line-height: 108%"><u>QUESTIONS
+AND ANSWER</u></p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Simple Questions:</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 1: Write
+a query to display Employee ID, Employee Name, Department ID and</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Department Name of
+all employees who has a department assigned.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empid,e.empname,d.deptid,d.deptname</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info e join dept_info d where e.deptid is not null;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 2: Write
+a query to display the Employee ID, Employee Name, 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Basic Pay  of all
+employees who are in employee category 'A'</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empid,e.empname,s.basic </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info e join salary_info s on
+e.employee_category=s.employee_category </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+s.employee_category='A';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 3: Write
+a query to display the Employee ID, Employee Name, Department ID and</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Department Name of
+all employees who has a department assigned and department location
+is ‘CHENNAI’.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empid,e.empname,d.deptid,d.deptname </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info e join dept_info d on e.deptid=d.deptid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+e.deptid is not null and d.location like 'Bangalore';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 4: Write
+a query to display the employee ID and 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#employee name of
+the employees who have not been assigned a department yet.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empid,empname from employee_info</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+deptid is null;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 5: Write
+a query to display the employee ID, employee name and 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#joining date of the
+employees who joined before 2005.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empid,empname,joining_dt</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info where extract(year from joining_dt)&lt;2005;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 6: write
+a query to display employee name and date of joining for all
+employees.</p>
+<p style="margin-bottom: 0in; line-height: 100%">#(Date should be
+displayed in the format “23/JANUARY/2012�<font face="Calibri, serif">�</font>
+with Alias “ JOINING_DATE�<font face="Calibri, serif">�</font>
+in select statement)</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empname,date_format(joining_dt,'%e/%M/%Y ') JOINING_DATE;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 7: Write
+a query to display the employee ID,  employee name and 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#joining date  of
+the employees who joined between Jan 1 2005 and Dec 31’st
+2010</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empid,empname,joining_dt</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+joining_dt between '2005-01-01' and '2012-12-31';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 8: Write
+a query to display the employee ID, employee name and</p>
+<p style="margin-bottom: 0in; line-height: 100%">#joining date of the
+employees who joined in MARCH.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empid,empname,joining_dt</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info where joining_dt like '____-03-__';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 9: Write
+a query to display all employee names which begins with 'R'.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empname from employee_info where empname like 'R%';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 10: Write
+a query to display the first five employees name in the employee
+table and 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#the respective  row
+number  (use  ROWNUM  for identifying the first five records)</p>
+<p style="margin-bottom: 0in; line-height: 100%">SET @rank=0; 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empname ,@rank:=@rank+1 AS rowno from employee_info order by rowno
+limit 5;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Average Questions:</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 1: Write
+a query to display the EmployeeID, Employee Name,</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Net Pay  of an
+employee  whose ID is "E001" for the month of APRIL</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+i.empid,i.empname,p.netpay</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info i join emp_payroll p on i.empid=p.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+p.empid='E001' and month like 'APR';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 2: Write
+a query to display the department id and no of employees in each</p>
+<p style="margin-bottom: 0in; line-height: 100%">#department sorted
+by department id.(Exclude department with null values).</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+ei.deptid,count(ei.deptid) NO_Of_EMPLOYEE</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+dept_info di join employee_info ei on di.deptid=ei.deptid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+ei.deptid is not null group by ei.deptid order by di.deptid asc;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 3: Write
+a query to display the EmployeeID, Employee Name and 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#the total number of
+leaves each employee has taken with “Total_Leaves�<font face="Calibri, serif">�</font>
+as alias.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+ei.empid,ei.empname,sum(Total_leaves) Total_Leaves</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info ei join emp_leave_info eli on ei.empid=eli.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">group
+by empid;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 4: Write
+a query to display the EmployeeID, Employee Name, DOB 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#and Age in Years
+without decimals with alias name "Age".</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Hint: Formula for
+age calculation is Age = current date- dob/12, round this to the
+nearest whole number.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empid,empname,dob,round(datediff(current_date,dob)/365) AGE </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 5: Write
+a query to display employee id, employee name of all employees</p>
+<p style="margin-bottom: 0in; line-height: 100%">#who doesn't have
+LOP amount for the month of APR and year 2012.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+ei.empid,ei.empname</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+emp_payroll ep join employee_info ei on ep.empid=ei.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+lopamount=0 and ep.month=�APR� and ep.year=2012</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">order
+by ei.empid;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 6: Write
+a query to display employee name, professional tax, netpay of
+employees with employee category 'A'</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+empname,proftax,netpay</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+salary_info si join employee_info ei on </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">si.employee_category=ei.employee_category
+join emp_payroll ep on ei.empid=ep.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+si.employee_category='A';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 7: Write
+a query to display employee id, employee name,</p>
+<p style="margin-bottom: 0in; line-height: 100%">#department id who
+are having netpay in the range 10000 - 20000</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+ei.empid,ei.empname,ei.deptid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info ei join emp_payroll ep on ei.empid=ep.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+netpay between 10000 and 20000;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 8: Write
+a query to display employee names whose 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#total deduction is
+more than 2000 for the month of APRIL.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+ei.empname</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+emp_payroll ep join employee_info ei on ep.empid=ei.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">where
+totaldeduction&gt;2000 and month like 'APR';</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 9: Write
+a query to display employee id, employee name, department id, 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#department name of
+all employees regardless of whether an employee is assigned a
+department or not.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+ei.empid,ei.empname,ei.deptid,di.deptname,</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">case
+</font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">when
+ei.deptid is not null then 'YES'</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">else
+'NO'</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">end
+ASSIGNED_OR_NOT</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info ei join dept_info di;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 10: Write
+a query to display Employee ID, Employee Name, Department ID,</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Years of Experience
+and Employee Category of the employees who have availed leaves more
+than 10 days.</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Hint: Use the
+total_leaves column to check the leave condition for more than ten
+days.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+ei.empid,ei.deptid,ei.yrs_of_exp,ei.employee_category</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">from
+employee_info ei join emp_leave_info eli on ei.empid=eli.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">group
+by eli.empid having sum(total_leaves)&gt;10;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Complex Questions:</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 1: Write
+a query to display employee id, employee name and remaining casual</p>
+<p style="margin-bottom: 0in; line-height: 100%">#leaves (alias-
+RemainingLeaves) for the employee with employee id "E002". 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Based on the total
+causal leaves available, subtract the number of causal leaves he has</p>
+<p style="margin-bottom: 0in; line-height: 100%">#availed to get the
+remaining leaves.</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Hint: CL –
+Causal leave. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#EMPLOYEE_INFO table
+has Employee’s leave Category. For example
+employee “E001�<font face="Calibri, serif">�</font>
+belong to</p>
+<p style="margin-bottom: 0in; line-height: 100%">#“X�<font face="Calibri, serif">�</font>
+leave category. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#EMP_LEAVE_INFO
+table has details of number of leaves the employees has availed. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#For example,
+“E001�<font face="Calibri, serif">�</font>
+has availed totally 8 days of causal leave. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#LEAVE_INFO table
+has the Leave Category and number of CL, EL and ML available for the</p>
+<p style="margin-bottom: 0in; line-height: 100%">#category. For
+example, “E001�<font face="Calibri, serif">�</font>
+has category X which has 18 days of total causal leave 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#that he can avail. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#So, E001’s
+remaining leave would be 10 days. Similarly calculate for E002. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empid,e.empname,(l.cl-sum(el.total_leaves)) as remainingleaves from
+emp_leave_info el join employee_info e</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">on
+el.empid=e.empid</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">
+join leave_info l on e.leave_category=l.leave_category where
+e.empid='E002' </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">and
+el.leave_type='cl' group by e.empid;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 2: Write
+a query to display employee id, employee name and total number of 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#leaves he can take
+(hint: with “EligibleLeave�<font face="Calibri, serif">�</font>
+as alias). This should be retrieved for 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#all the employees. 
+Sum all the EL, ML and EL leaves for the each employee’s
+category to 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#get the total
+leaves.</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Hint: 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#EMPLOYEE_INFO table
+has Employee’s leave Category. For example
+employee “E001�<font face="Calibri, serif">�</font>
+belong to</p>
+<p style="margin-bottom: 0in; line-height: 100%">#“X�<font face="Calibri, serif">�</font>
+leave category. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#LEAVE_INFO table
+has the Leave Category and number of CL, EL and ML available for
+them.</p>
+<p style="margin-bottom: 0in; line-height: 100%">#For example,
+Employee E001 belongs to X category and he has 18 days of CL and 5
+days of</p>
+<p style="margin-bottom: 0in; line-height: 100%">#EL and 10 days of
+ML that he can avail. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#So, E001’s
+eligible leave would be 33 days which is sum of all his leaves.  
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Similarly calculate
+for all employees. 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empid,e.empname,(l.cl+l.el+l.ml) as eligibleleave from
+employee_info e join leave_info l</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">on
+l.leave_category=e.leave_category;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 3: Write
+a Query to display employee id, employee name, department id, 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#department name,
+net pay of all employees who have drawn the highest salary (net pay) 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#in the month of
+APRIL 2012.</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Hint:  For example
+if there are 10 employees where 3 employees have got a salary of 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#1000 which is the
+highest salary of the employee in the month of April all the three</p>
+<p style="margin-bottom: 0in; line-height: 100%">#records needs to be
+displayed.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empid,e.empname,e.deptid,d.deptname,p.netpay from employee_info e
+join</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">emp_payroll
+p on e.empid=p.empid  join dept_info d on e.deptid=d.deptid where </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">p.month='apr'
+and e.empid in</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">(select
+empid from emp_payroll where netpay&gt;=</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">(select
+max(netpay) from emp_payroll));</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 4: Write
+a query to display employee id, employee name, basic pay and tax 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#percentage for all
+employees. Use “TaxPercentage�<font face="Calibri, serif">�</font>
+as alias.  Display the Tax percentage 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#for all employees
+based on the following criteria: (If Basic Pay &lt;= 4000 then tax 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#percentage should
+be 10%, basic &lt;= 5000 then 20%, basic&lt;=6000 then 30% basic &gt;
+6000</p>
+<p style="margin-bottom: 0in; line-height: 100%">#then 40%).</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empid,e.empname,s.basic ,</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">if(s.basic&lt;=4000,
+0.1*s.basic,(if(s.basic&lt;=5000,0.2*s.basic,(if(s.basic&lt;=6000,0.3*s.basic,0.4*s.basic)))))</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">as
+taxpercentage from employee_info e join salary_info s on
+e.employee_category=s.employee_category order by e.empid;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Problem # 5: Write
+a query to display employee name,employee category and basic pay 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#for all employees
+based on the following criteria: (Emp_cat  
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#'A' - Basic Pay
+should be 6000,  'B'-4000, 'C'- 3000, 'D'-2000)</p>
+<p style="margin-bottom: 0in; line-height: 100%">#Hint: Use
+“salary�<font face="Calibri, serif">�</font>
+as alias for the basic pay field.</p>
+<p style="margin-bottom: 0in; line-height: 100%">#For example, if
+there are 3 employees with one having category ‘A’
+and other having</p>
+<p style="margin-bottom: 0in; line-height: 100%">#category ‘D’
+and other category ‘C’. Then
+the query should display the three employees 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">#name, category and
+the salary will be 6000, 2000 and 1000 for the three employees.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empname,e.employee_category,s.basic,</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">if(e.employee_Category='A',6000,</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">(if(e.employee_category='B',4000,</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">(if(e.employee_category='C',3000,2000)))))
+as salary from employee_info e join salary_info s</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">on
+e.employee_category=s.employee_category order by e.empid;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+e.empname,e.employee_category,s.basic,</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">case
+e.employee_category</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">when
+'A' then 6000</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">when
+'B' then 4000</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">when
+'C' then 3000</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">else
+2000</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">end
+</font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">as
+salary from employee_info e join salary_info s</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">on
+e.employee_category=s.employee_category order by e.empid;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">show
+tables;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+* from dept_info;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+* from emp_leave_info;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+* from emp_payroll;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+* from employee_info;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+* from leave_info;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#4472c4">select
+* from salary_info;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><a name="_GoBack"></a>
+<br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 108%"><br>
+<br>
+
+</p>
+
+</body></html>
