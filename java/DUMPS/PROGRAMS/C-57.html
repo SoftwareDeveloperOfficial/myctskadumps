@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVA_DUMPS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../header/header.css">
+<link rel="stylesheet" href="../../mysql.css">
+<link rel="stylesheet" href="../../main.css">
+<script src="../../main.js"></script>
+<style>
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 20px;
+	}
+	
+	#myBtn {
+	  display: none;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 30px;
+	  z-index: 99;
+	  font-size: 18px;
+	  border: none;
+	  outline: none;
+	  background-color: red;
+	  color: white;
+	  cursor: pointer;
+	  padding: 15px;
+	  border-radius: 4px;
+	}
+	
+	#myBtn:hover {
+	  background-color: #555;
+	}
+	</style>
+</head>
+<body>
+
+
+	<div class="topnav" id="myTopnav">
+		<a href="../../../home.html" class="active">Home</a>
+		<a href="../../../mysql/mysql.html">Mysql Dumps</a>
+		<a href="../../../oracle/Oracle.html">Oracle Mcq's Practise</a>
+		<a href="../../../java/java.html">Java Dumps</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	  </div>
+
+<br><br>
+<script src="../../../header/header.js"></script>
+
+
+  
+<div class="dropdown">
+	<button onclick="myFunction()" class="dropbtn">Java Dumps</button> --->
+	<div id="myDropdown" class="dropdown-content">
+	  <a href="../../mcqs.html" style="border-bottom: 1px solid gray;">Mcq's</a> 
+	  <a href="#" style="border-bottom: 1px solid gray;">Programs</a>
+	  <a href="../../assesments.html" style="border-bottom: 1px solid gray;">Code Challenge Assesments</a>
+	</div>
+  </div>
+  
+   
+<div class="dropdown">
+	<button onclick="myFunction()" style="background-color:  black;" class="dropbtn">Program's</button>
+	<div id="myDropdown" class="dropdown-content">
+		<a href="1)Java_Main_Dumps.html" style="border-bottom: 1px solid gray;">1) Main Dump</a>
+		<a href="2)second_attempt_dumps.html" style="border-bottom: 1px solid gray;">2) Second attempt Dumps</a>
+ 		<a href="3)javasetdump.html" style="border-bottom: 1px solid gray;">3) Java set Dump</a>
+		<a href="4)Modified Dumps.html" style="border-bottom: 1px solid gray;"> 4) Modified Programs Dumps</a>
+		<a href="5)CheckModifiedDumps.html" style="border-bottom: 1px solid gray;"> 5) Check - Modified Programs Dumps</a>
+		<a href="6)final.html" style="border-bottom: 1px solid gray;">6) Final Dumps</a>
+        <a href="C-57.html" style="border-bottom: 1px solid gray;">C-57</a>
+        <a href="C-61.html" style="border-bottom: 1px solid gray;">C-61</a>
+
+ </div>
+  </div>
+</body>
+</html>
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0067)http://s3.pdfconvertonline.com/convert/p3r68-cdx67/02pgl-m9adb.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.4.7.2 (Linux)">
+	<meta name="author" content="Redmi Note 7 Pro">
+	<meta name="created" content="2021-03-02T14:20:18">
+	<meta name="changedby" content="Redmi Note 7 Pro">
+	<meta name="changed" content="2021-03-02T14:32:39">
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 1in }
+		p { margin-bottom: 0.1in; direction: ltr; font-size: 11pt; line-height: 120%; text-align: left; orphans: 2; widows: 2 }
+	</style>
+</head>
+<body lang="en-US" dir="ltr" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed="">
+<p style="margin-bottom: 0.14in; line-height: 25%"><a name="_GoBack"></a>
+<span lang="en-US">85. Word Count</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Given
+a string array (s) and non negative integer (n) and return the number
+of elements in</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">the
+array which have same number of characters as the givent int N.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Include
+a class UserMainCode with a static method countWord which accepts the
+string</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">array
+and integer. The return type is the string formed based on rules.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Create
+a Class Main which would be used to accept the string and integer and
+call the static</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">method
+present in UserMainCode.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+and Output Format:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+consists of a an integer indicating the number of elements in the
+string array followed</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">the
+elements and ended by the non-negative integer (N).</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Output
+consists of a integer .</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Refer
+sample output for formatting specifications.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">4</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">a</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">bb</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">b</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">ccc</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">1</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">2</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">5</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">dog</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">cat</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">monkey</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">bear</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">fox</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">3</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">3</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Main:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.*;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class Main {</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">public
+static void main(String []args){</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">Scanner
+sc=new Scanner(System.in);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">int
+n=sc.nextInt();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">String[]
+str=new String[n];</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">for(int
+i=0;i&lt;n;i++)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">str[i]=sc.next();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">int
+c=sc.nextInt();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%">
+<span lang="en-US">System.out.println(UserMainCode.countWord(n,str,c));</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">sc.close();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">UserMainCode:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class UserMainCode {</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">public
+static int countWord(int n,String str[],int c)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">int
+count=0;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">for(int
+i=0;i&lt;str.length;i++)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%">
+<span lang="en-US">if(str[i].length()==c)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">count++;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">return
+count;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">65
+)Even Sum &amp; Duplicate Elements</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Write
+a program to read a integer array, Remove the duplicate elements and
+display sum of</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">even
+numbers in the output. If input array contain only odd number then
+return -1.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Include
+a class UserMainCode with a static method sumElements which accepts
+the </span>
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">integer</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">array.
+The return type is integer.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Create
+a Class Main which would be used to accept the integer array and call
+the static</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">method
+present in UserMainCode.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+and Output Format:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+consists of an integer n which is the number of elements followed by
+n integer values.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Output
+consists of integer.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Refer
+sample output for formatting specifications.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">7</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">2</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">3</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">54</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">1</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">6</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">7</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">7</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">62</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">6</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">3</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">7</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">9</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">13</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">17</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">21</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">-1</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">MAIN:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.HashMap;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.LinkedHashMap;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.LinkedHashSet;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.Scanner;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class Main</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+static void main(String args[])</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Scanner
+sc=new Scanner(System.in);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">int
+n=sc.nextInt();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">int
+a[]=new int[n];</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">for(int
+i=0;i&lt;n;i++)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">a[i]=sc.nextInt();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">System.out.println(UserMainCode.sumElements(a));</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">USERMAINCODE:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.Iterator;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.LinkedHashSet;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class UserMainCode {</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+static int sumElements(int a[])</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">LinkedHashSet&lt;Integer&gt;h1=new
+LinkedHashSet&lt;Integer&gt;();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">int
+s=0;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">for(int
+i=0;i&lt;a.length;i++)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">h1.add(a[i]);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Iterator&lt;Integer&gt;
+it=h1.iterator();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">while(it.hasNext())</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">int
+k=it.next();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">if(k%2==0)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">s=s+k;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">if(s&gt;0)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">return
+s;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">else</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">return
+-1;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">33.Sorted
+Array</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Write
+a program to read a string array, remove duplicate elements and sort
+the array.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Note:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">1.
+The check for duplicate elements must be case-sensitive. (AA and aa
+are NOT</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">duplicates)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">2.
+While sorting, words starting with upper case letters takes
+precedence.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Include
+a class UserMainCode with a static method orderElements which accepts
+the </span>
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">string</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">array.
+The return type is the sorted array.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Create
+a Class Main which would be used to accept the string arrayand
+integer and call the</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">static
+method present in UserMainCode.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+and Output Format:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+consists of an integer n which is the number of elements followed by
+n string values.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Output
+consists of the elements of string array.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Refer
+sample output for formatting specifications.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">6</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">AAA</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">BBB</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">AAA</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">AAA</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">CCC</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">CCC</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">AAA</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">BBB</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">CCC</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">7</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">AAA</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">BBB</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">aaa</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">AAA</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Abc</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">A</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">b</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">A</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">AAA</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Abc</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">BBB</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">aaa</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">b</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Main:-</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.*;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class Main</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+static void main(String[] args)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">int
+n;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Scanner
+sin = new Scanner(System.in);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">n
+= sin.nextInt();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">String[]
+a1 = new String[n];</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">for(int
+i=0;i&lt;n;i++)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">a1[i]
+= sin.next();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">a1
+= UserMainCode.orderElements(a1);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">for(int
+i=0;i&lt;a1.length;i++)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">System.out.println(""+a1[i]);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">UserMainCode:-</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.*;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class UserMainCode</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+static String[] orderElements(String[] arr)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">HashSet&lt;String&gt;
+al=new HashSet&lt;String&gt;();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">for(int
+i=0;i&lt;arr.length;i++)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">al.add(arr[i]);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Iterator&lt;String&gt;
+itr=al.iterator();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">String
+ar[] = new String[al.size()];</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">int
+i =0 ;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">while(itr.hasNext()){</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">ar[i]
+= itr.next();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">i++;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Arrays.sort(ar);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">return
+ar;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">54.
+DOB - Validation</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Write
+a program to validate the Date of Birth given as input in String
+format (MM/dd/yyyy)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">as
+per the validation rules given below. Return true for valid dates
+else return false.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">1.
+Value should not be null</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">2.
+month should be between 1-12, date should be between 1-31 and year
+should be a four</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">digit
+number.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Include
+a class UserMainCode with a static method ValidateDOB which accepts
+the string.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">The
+return type is TRUE / FALSE.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Create
+a Class Main which would be used to accept the string and call the
+static method</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">present
+in UserMainCode.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+and Output Format:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+consists of a string.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Output
+consists of TRUE / FALSE.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Refer
+sample output for formatting specifications.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">12/23/1985</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">TRUE</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">31/12/1985</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">FALSE</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.text.SimpleDateFormat;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.Date;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.Scanner;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class Main {</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+static void main(String[] args)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">String
+str=new String();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Scanner
+sc=new Scanner(System.in);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">str=sc.nextLine();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Boolean
+b=UserMainCode.ValidateDOB(str);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">if(b==�true�)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%">
+<span lang="en-US">System.out.println("TRUE");</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">if(b==�false�)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%">
+<span lang="en-US">System.out.println("FALSE");</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.text.SimpleDateFormat;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.Date;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class UserMainCode {</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+static Boolean ValidateDOB(String str){</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Boolean
+b=�false�;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">SimpleDateFormat
+sdf=new SimpleDateFormat("MM/dd/yyyy");</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%">
+<span lang="en-US">sdf.setLenient(false);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">try</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">Date
+d1=sdf.parse(str);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">return
+b=�true�;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">catch(Exception
+e)</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">return
+b=�false�;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">61.String
+Processing - ZigZag</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Write
+a program to read a string containing date in DD-MM-YYYY format. find
+the number of</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">days
+in the given month.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Note
+- In leap year February has got 29 days.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Include
+a class UserMainCode with a static method getLastDayOfMonth which
+accepts </span>
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">the</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">string.
+The return type is the integer having number of days.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Create
+a Class Main which would be used to accept the string and call the
+static method</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">present
+in UserMainCode.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+and Output Format:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Input
+consists of a string.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Output
+consists of integer.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Refer
+sample output for formatting specifications.</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">12-06-2012</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 1:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">30</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Input 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">10-02-2012</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">Sample
+Output 2:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">29</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">MAIN:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.io.BufferedReader;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">import
+java.io.IOException;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">import
+java.io.InputStreamReader;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">import
+java.text.ParseException;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">import
+java.text.SimpleDateFormat;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">import
+java.util.*;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">public
+class Main {</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">public
+static void main(String[] args) throws IOException, </span>
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">ParseException
+{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">Scanner
+S=new Scanner(System.in);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">String
+s1=S.next();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%">
+<span lang="en-US">UserMainCode.getLastDayOfMonth(s1);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">USERMAINCODE:</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.text.ParseException;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.text.SimpleDateFormat;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.Calendar;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">import
+java.util.Date;</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">public
+class UserMainCode {</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">public
+static void getLastDayOfMonth(String s1) throws ParseException{</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">SimpleDateFormat
+sdf=new SimpleDateFormat("dd-MM-yyyy");</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">Calendar
+cal=Calendar.getInstance();</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">Date
+d1=sdf.parse(s1);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">cal.setTime(d1);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"> <span lang="en-US">int
+n=cal.getActualMaximum(Calendar.DAY_OF_MONTH);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%">
+<span lang="en-US">System.out.println(n);</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><br>
+<br>
+
+</p>
+<p style="margin-bottom: 0.14in; line-height: 25%"><span lang="en-US">}</span></p>
+
+</body></html>
